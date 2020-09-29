@@ -5,20 +5,16 @@ class Square():
     def __init__(self, *args, **kwargs):
         for key, value in kwargs.items():
             setattr(self, key, value)
-        if self.width == self.height:
-            self.size = self.width
-        else:
-            raise ValueError('Not a Square')
 
     def area_of_my_square(self):
         """ Area of the square """
-        return self.size * self.size
+        return self.width * self.width
 
     def PermiterOfMySquare(self):
-        return (self.size * 4)
+        return (self.width * 4)
 
     def __str__(self):
-        return "{}".format(self.size)
+        return "{}".format(self.width)
 
 
 if __name__ == "__main__":
