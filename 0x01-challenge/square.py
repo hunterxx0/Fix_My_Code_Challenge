@@ -13,7 +13,7 @@ class Square():
             setattr(self, key, value)
         if self.width != 0 and self.width != self.height:
             self.height = self.width
-        else:
+        elif self.height != 0:
             self.width = self.height
 
     def area_of_my_square(self):
