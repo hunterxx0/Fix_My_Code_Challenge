@@ -7,6 +7,8 @@ class Square():
             setattr(self, key, value)
         if self.width == self.height:
             self.size = self.width
+        else:
+            raise ValueError
 
     def area_of_my_square(self):
         """ Area of the square """
