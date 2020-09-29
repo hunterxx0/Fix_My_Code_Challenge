@@ -35,3 +35,7 @@ if __name__ == "__main__":
     print(s)
     print(s.area())
     print(s.perimeter())
+    t = Square(height=2)
+    print(t)
+    print(t.area())
+    print(t.perimeter())
