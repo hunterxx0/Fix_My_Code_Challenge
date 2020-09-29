@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ Square """
 
+
 class Square():
     """ Square """
     def __init__(self, *args, **kwargs):
@@ -10,15 +11,24 @@ class Square():
 
     def area_of_my_square(self):
         """ Area of the square """
-        return self.width * self.width
+        if self.width == self.height:
+            return self.width * self.width
+        else:
+            return 0
 
     def PermiterOfMySquare(self):
         """ Permit """
-        return (self.width * 4)
+        if self.width == self.height:
+            return (self.width * 4)
+        else:
+            return 0
 
     def __str__(self):
         """ STR """
-        return "{}".format(self.width)
+        if self.width == self.height:
+            return "{}".format(self.width)
+        else:
+            return 0
 
 
 if __name__ == "__main__":
